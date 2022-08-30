@@ -1,1 +1,2 @@
-# SNHU-CS-320
+# CS-320: Software Testing Automation & QA
+# Southern New Hampshire University
