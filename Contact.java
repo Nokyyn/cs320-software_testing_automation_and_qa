@@ -3,9 +3,6 @@
  * Date: 03/21/2022
  * Course ID: CS-320-T4517 (22EW4)
  * Description: Contact class for CS-320 mobile app project
- * Multiple lines have been commented out, after realizing that each piece NEEDS to throw
- * an exception, for testing purposes. I originally wrote the program to function as a console application, out of habit.
- * 
  */
 
 package com.snhu.CS320Project;
@@ -69,8 +66,6 @@ public class Contact {
 	// update firstName, validate input is not null or greater than 10 characters
 	public void setFirstName(String firstName) {
 		if (firstName == null || firstName.length() > 10) {
-			//System.out.println("Invalid first name (must be 10 characters, or less)\n");
-			//return;
 			throw new IllegalArgumentException("Invalid first name (must be 10 characters, or less)");
 		}
 		this.firstName = firstName;
@@ -80,8 +75,6 @@ public class Contact {
 	// update lastName, validate input is not null or greater than 10 characters
 	public void setLastName(String lastName) {
 		if (lastName == null || lastName.length() > 10) {
-			//System.out.println("Invalid last name (must be 10 characters, or less)\n");
-			//return;
 			throw new IllegalArgumentException("Invalid last name (must be 10 characters, or less)");
 		}
 		this.lastName = lastName;
@@ -91,8 +84,6 @@ public class Contact {
 	// update phone, validate input is not null or NOT exactly 10 characters
 	public void setPhone(String phone) {
 		if (phone == null || phone.length() != 10) {
-			//System.out.println("Invalid phone number (must be exactly 10 characters)\n");
-			//return;
 			throw new IllegalArgumentException("Invalid phone number (must be exactly 10 characters)");
 		}
 		this.phone = phone;
@@ -102,8 +93,6 @@ public class Contact {
 	// update address, validate input is not null or greater than 30 characters
 	public void setAddress(String address) {
 		if (address == null || address.length() > 30) {
-			//System.out.println("Invalid address (must be 30 characters, or less)\n");
-			//return;
 			throw new IllegalArgumentException("Invalid address (must be 30 characters, or less)");
 		}
 		this.address = address;
